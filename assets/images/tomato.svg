@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Tomato Body Gradient -->
+    <linearGradient id="tomatoBodyGrad" x1="25%" y1="15%" x2="75%" y2="85%">
+      <stop offset="0%" stop-color="#F87171"/>
+      <stop offset="45%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+    <!-- Tomato Calyx Leaves Gradient -->
+    <linearGradient id="tomatoCalyxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <!-- Ground Shadow -->
+    <radialGradient id="tomatoGroundShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#991B1B" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#991B1B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tomatoShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#991B1B" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="100" cy="180" rx="56" ry="12" fill="url(#tomatoGroundShadow)"/>
+
+  <!-- Plump Round Cute Tomato Body -->
+  <path d="M60 76 
+           C38 96 36 134 56 156 
+           C74 176 126 176 144 156 
+           C164 134 162 96 140 76 
+           C122 60 78 60 60 76 Z"
+        fill="url(#tomatoBodyGrad)"
+        stroke="#B91C1C"
+        stroke-width="3.5"
+        filter="url(#tomatoShadow)"/>
+
+  <!-- Glossy Highlights -->
+  <path d="M66 94 C60 108 60 126 65 138" stroke="#FEE2E2" stroke-width="4.5" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="68" cy="88" r="3" fill="#FEE2E2" opacity="0.65"/>
+
+  <!-- Green Stem & Star Calyx Sepals (Cute Green Hat) -->
+  <g>
+    <!-- Little curved stem -->
+    <path d="M100 50 C100 36 104 24 114 16" stroke="#047857" stroke-width="5.5" stroke-linecap="round"/>
+    <ellipse cx="114" cy="16" rx="3.5" ry="3" fill="#34D399"/>
+    <!-- 5 pointed star leaves -->
+    <path d="M100 52 L92 36 L100 46 L82 46 L95 53 L78 62 L96 59 L100 70 L104 59 L122 62 L105 53 L118 46 L100 46 L108 36 Z"
+          fill="url(#tomatoCalyxGrad)"
+          stroke="#065F46"
+          stroke-width="2"/>
+    <circle cx="100" cy="52" r="4.5" fill="#059669"/>
+  </g>
+
+  <!-- Blushing Pastel Pink Cheeks -->
+  <ellipse cx="74" cy="122" rx="9.5" ry="6.5" fill="#FBCFE8" opacity="0.75"/>
+  <ellipse cx="126" cy="122" rx="9.5" ry="6.5" fill="#FBCFE8" opacity="0.75"/>
+
+  <!-- Kawaii Sparkling Eyes -->
+  <g>
+    <!-- Left Eye -->
+    <ellipse cx="82" cy="106" rx="6.5" ry="8.5" fill="#1C1917"/>
+    <circle cx="80" cy="103" r="3" fill="#FFFFFF"/>
+    <circle cx="84.5" cy="108.5" r="1.5" fill="#FFFFFF"/>
+    <!-- Right Eye -->
+    <ellipse cx="118" cy="106" rx="6.5" ry="8.5" fill="#1C1917"/>
+    <circle cx="116" cy="103" r="3" fill="#FFFFFF"/>
+    <circle cx="120.5" cy="108.5" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Sweet Cute Smiling Mouth -->
+  <path d="M93 118 C93 129 107 129 107 118" stroke="#1C1917" stroke-width="3" stroke-linecap="round" fill="#991B1B"/>
+  <path d="M96 122 C98 126 102 126 104 122" fill="#FCA5A5"/>
+
+  <!-- Tiny Happy Hands -->
+  <ellipse cx="46" cy="125" rx="5.5" ry="6.5" fill="#EF4444" stroke="#B91C1C" stroke-width="2"/>
+  <ellipse cx="154" cy="125" rx="5.5" ry="6.5" fill="#EF4444" stroke="#B91C1C" stroke-width="2"/>
+
+  <!-- Sparkle of Freshness -->
+  <path d="M162 66 Q165 71 170 72 Q165 74 162 78 Q159 74 154 72 Q159 71 162 66 Z" fill="#FDE047" opacity="0.95"/>
+</svg>

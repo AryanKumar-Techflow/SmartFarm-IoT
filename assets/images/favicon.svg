@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#40916c"/>
+      <stop offset="100%" stop-color="#1b4332"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#grad)"/>
+  <!-- Leaf Sprout -->
+  <path d="M20 48 C20 34 28 22 44 18 C44 32 36 44 20 48 Z" fill="#95d5b2"/>
+  <path d="M44 18 C36 28 32 38 32 48" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <!-- Water Droplet Accent -->
+  <path d="M46 36 C46 31 51 25 51 25 C51 25 56 31 56 36 C56 39 53.5 42 51 42 C48.5 42 46 39 46 36 Z" fill="#38bdf8"/>
+</svg>

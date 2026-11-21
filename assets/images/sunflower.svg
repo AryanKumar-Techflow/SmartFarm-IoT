@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Petal Gradient -->
+    <linearGradient id="sunPetalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <!-- Center Face Gradient -->
+    <linearGradient id="sunFaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#713F12"/>
+    </linearGradient>
+    <!-- Leaf Gradient -->
+    <linearGradient id="sunLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#F59E0B" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Green Stem and Cute Leaves -->
+  <path d="M100 145 C100 170 98 185 96 195" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+  <!-- Left Leaf -->
+  <path d="M96 170 C70 168 55 150 56 138 C72 136 90 152 96 170 Z" fill="url(#sunLeafGrad)"/>
+  <path d="M72 152 C82 158 90 164 96 170" stroke="#047857" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right Leaf -->
+  <path d="M98 178 C122 178 140 162 142 150 C126 146 108 160 98 178 Z" fill="url(#sunLeafGrad)"/>
+  <path d="M122 162 C112 168 104 174 98 178" stroke="#047857" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Back Layer Petals -->
+  <g filter="url(#softGlow)">
+    <g transform="translate(100, 100)">
+      <!-- 12 Radiating Petals rotated 30 deg apart -->
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(30)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(60)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(90)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(120)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(150)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(180)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(210)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(240)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(270)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(300)"/>
+      <path d="M-13 -75 C-22 -55 -15 -35 0 -35 C15 -35 22 -55 13 -75 C6 -88 -6 -88 -13 -75 Z" fill="#FBBF24" opacity="0.85" transform="rotate(330)"/>
+
+      <!-- Front Layer Petals (offset 15 deg) -->
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(15)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(45)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(75)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(105)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(135)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(165)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(195)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(225)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(255)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(285)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(315)"/>
+      <path d="M-12 -70 C-20 -50 -12 -30 0 -30 C12 -30 20 -50 12 -70 C5 -82 -5 -82 -12 -70 Z" fill="url(#sunPetalGrad)" transform="rotate(345)"/>
+    </g>
+  </g>
+
+  <!-- Big Round Cute Chocolate Center Face -->
+  <circle cx="100" cy="100" r="44" fill="url(#sunFaceGrad)" stroke="#B45309" stroke-width="3"/>
+
+  <!-- Cheerful Seed Texture Dots -->
+  <circle cx="85" cy="74" r="2.2" fill="#FBBF24" opacity="0.4"/>
+  <circle cx="115" cy="74" r="2.2" fill="#FBBF24" opacity="0.4"/>
+  <circle cx="100" cy="68" r="2" fill="#FBBF24" opacity="0.4"/>
+  <circle cx="72" cy="98" r="2" fill="#FBBF24" opacity="0.3"/>
+  <circle cx="128" cy="98" r="2" fill="#FBBF24" opacity="0.3"/>
+
+  <!-- Blushing Rosy Cheeks -->
+  <ellipse cx="78" cy="112" rx="9" ry="6" fill="#F472B6" opacity="0.6"/>
+  <ellipse cx="122" cy="112" rx="9" ry="6" fill="#F472B6" opacity="0.6"/>
+
+  <!-- Kawaii Sparkling Eyes -->
+  <g>
+    <!-- Left Eye -->
+    <ellipse cx="83" cy="95" rx="6.5" ry="8" fill="#1C1917"/>
+    <circle cx="81" cy="92" r="2.8" fill="#FFFFFF"/>
+    <circle cx="85.5" cy="97" r="1.4" fill="#FFFFFF"/>
+    <!-- Right Eye -->
+    <ellipse cx="117" cy="95" rx="6.5" ry="8" fill="#1C1917"/>
+    <circle cx="115" cy="92" r="2.8" fill="#FFFFFF"/>
+    <circle cx="119.5" cy="97" r="1.4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Cute Big Open Smile -->
+  <path d="M90 108 C90 120 110 120 110 108" stroke="#1C1917" stroke-width="3" stroke-linecap="round" fill="#DC2626"/>
+  <path d="M93 113 C96 117 104 117 107 113" fill="#F87171"/>
+
+  <!-- Little Sparkle Star Accent -->
+  <path d="M152 46 Q156 52 162 54 Q156 56 152 62 Q148 56 142 54 Q148 52 152 46 Z" fill="#FDE047" opacity="0.9"/>
+  <circle cx="166" cy="42" r="2" fill="#FDE047"/>
+</svg>

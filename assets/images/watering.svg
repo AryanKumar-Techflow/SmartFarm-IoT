@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Can Body Gradient -->
+    <linearGradient id="canBodyGrad" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#7DD3FC"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <!-- Water Drop Gradient -->
+    <linearGradient id="waterDropletGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <filter id="waterShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0284C7" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Big Rounded Handle -->
+  <path d="M60 85 C35 85 25 110 25 130 C25 150 40 160 60 160" stroke="#0284C7" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path d="M60 85 C35 85 25 110 25 130 C25 150 40 160 60 160" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Spout Arm -->
+  <path d="M125 125 L165 92" stroke="#0284C7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M125 125 L165 92" stroke="#38BDF8" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Spout Rose / Sprinkler Head -->
+  <g transform="translate(165, 88) rotate(35)">
+    <ellipse cx="0" cy="0" rx="9" ry="18" fill="#0284C7"/>
+    <ellipse cx="0" cy="0" rx="7" ry="16" fill="#7DD3FC"/>
+    <!-- Sprinkler holes -->
+    <circle cx="-1" cy="-8" r="1.5" fill="#0369A1"/>
+    <circle cx="0" cy="-3" r="1.5" fill="#0369A1"/>
+    <circle cx="1" cy="2" r="1.5" fill="#0369A1"/>
+    <circle cx="0" cy="7" r="1.5" fill="#0369A1"/>
+  </g>
+
+  <!-- Sprayed Water Droplets -->
+  <g>
+    <!-- Droplet 1 -->
+    <path d="M182 105 C186 108 190 114 188 118 C186 122 180 122 178 118 C176 114 180 108 182 105 Z" fill="url(#waterDropletGrad)"/>
+    <!-- Droplet 2 -->
+    <path d="M172 120 C175 122 178 128 176 132 C174 135 169 135 168 132 C166 128 170 124 172 120 Z" fill="url(#waterDropletGrad)"/>
+    <!-- Droplet 3 -->
+    <path d="M192 122 C195 125 198 130 196 134 C194 137 190 137 188 134 C187 131 190 126 192 122 Z" fill="url(#waterDropletGrad)"/>
+    <!-- Droplet 4 -->
+    <path d="M180 140 C183 143 186 148 184 152 C182 155 178 155 176 152 C175 149 178 144 180 140 Z" fill="url(#waterDropletGrad)"/>
+  </g>
+
+  <!-- Cute Watering Can Main Body -->
+  <rect x="55" y="88" width="80" height="74" rx="20" fill="url(#canBodyGrad)" stroke="#0284C7" stroke-width="3.5" filter="url(#waterShadow)"/>
+
+  <!-- Top Opening Rim -->
+  <ellipse cx="95" cy="88" rx="28" ry="7" fill="#0369A1"/>
+  <ellipse cx="95" cy="88" rx="25" ry="5.5" fill="#E0F2FE"/>
+
+  <!-- Kawaii Blushing Cheeks -->
+  <ellipse cx="74" cy="132" rx="7.5" ry="5" fill="#F472B6" opacity="0.65"/>
+  <ellipse cx="116" cy="132" rx="7.5" ry="5" fill="#F472B6" opacity="0.65"/>
+
+  <!-- Kawaii Sparkling Eyes -->
+  <g>
+    <!-- Left Eye -->
+    <ellipse cx="80" cy="120" rx="5.5" ry="6.5" fill="#0F172A"/>
+    <circle cx="78.5" cy="117.5" r="2.2" fill="#FFFFFF"/>
+    <circle cx="82" cy="121.5" r="1.1" fill="#FFFFFF"/>
+    <!-- Right Eye -->
+    <ellipse cx="110" cy="120" rx="5.5" ry="6.5" fill="#0F172A"/>
+    <circle cx="108.5" cy="117.5" r="2.2" fill="#FFFFFF"/>
+    <circle cx="112" cy="121.5" r="1.1" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Big Cheerful Smile -->
+  <path d="M89 128 C89 136 101 136 101 128" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" fill="#DC2626"/>
+  <path d="M91 131 C93 134 97 134 99 131" fill="#F87171"/>
+
+  <!-- Water Ripple / Splash Emblem on Belly -->
+  <path d="M95 142 C92 146 91 149 93 151 C95 153 97 153 99 151 C101 149 98 146 95 142 Z" fill="#BAE6FD" opacity="0.8"/>
+
+  <!-- Fresh Sparkles -->
+  <path d="M42 66 Q45 70 50 71 Q45 73 42 77 Q39 73 34 71 Q39 70 42 66 Z" fill="#FDE047" opacity="0.95"/>
+  <path d="M142 56 Q144 59 148 60 Q144 61 142 64 Q140 61 136 60 Q140 59 142 56 Z" fill="#FDE047" opacity="0.9"/>
+</svg>
